@@ -3,13 +3,11 @@ import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Special
 import { Navbar } from './components'; 
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import './App.css'; 
-import { AuthProvider } from "./contexts/authContext";
+
 
 const App = () => (
   <div>
     
-    <AuthProvider>
-
     <Router>
       <Navbar />  {/* Move Navbar outside of Routes */}
       <Routes>
@@ -26,7 +24,7 @@ const App = () => (
     <Gallery />
     <FindUs />
     <Footer />
-    </AuthProvider>
+ 
 
   </div>
 );
